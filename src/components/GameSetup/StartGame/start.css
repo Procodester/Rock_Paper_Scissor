@@ -1,0 +1,47 @@
+/* Start Section with Grid layout for a gap with centered text */
+
+.start-section {
+    display: grid;
+    text-align: center;
+    gap: 2rem;
+}
+
+.sel-chances {
+    display: grid;
+    gap: 1rem;
+}
+
+.btn-hv:hover {
+    background-color: var(--bg-beige);
+}
+
+
+/* Animation for start transition */
+.start-transition {
+    animation: fade-in-left 0.25s cubic-bezier(0.400, 0.550, 0.565, 1.000) both;
+}
+
+
+/* Media query */
+@media(min-width: 375px) {
+    .sel-chances {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Keyframes for fade-in-left animation */
+@keyframes fade-in-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

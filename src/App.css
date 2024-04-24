@@ -1,0 +1,61 @@
+/* Root variables for colors, borders, shadows, buttons, font sizes, and font weights */
+
+:root {
+    /* Colors */
+    --bg-primary: #FAF2D3;
+    --bg-secondary: #FFE5AD;
+ 
+    /* Border and Shadows */
+    --border-width: 5px;
+    --border-radius: 0.5rem;
+    --border-color: #000000;
+    --shadow-color: #000000;
+    --border-shadow: 6px 6px 0px 0px var(--shadow-color);
+
+    --ele-solid-border: var(--border-width) solid var(--border-color);
+
+    /* Buttons */
+    --btn-border-width: 4px;
+
+    --btn-border: var(--btn-border-width) solid var(--border-color);
+
+    --btn-shadow: 4px 4px 0px 0px var(--shadow-color);
+    --btn-shadow-hv: 2px 2px 0px 0px var(--shadow-color);
+
+  
+    /* Font Size */
+    --fs-regular: clamp(1.5rem, 3vw, 2rem);
+    --fs-medium: clamp(2rem, 5vw, 3rem);
+    --fs-large: clamp(3rem, 8vw, 6rem);
+
+    /* Font Weight */
+    --fw-regular: 400;
+    --fw-medium: 600;
+}
+
+/* Main styles */
+main{
+    min-height: 100%;
+    min-height: 100dvh;  /* if browser does support */
+    background-color: var(--bg-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text styles */
+
+.text-sm {
+    font-size: 1rem;
+    font-weight: var(--fw-medium);
+}
+
+.text-rg {
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-medium);
+}
+
+.text-md {
+    font-size: var(--fs-medium);
+    font-weight: var(--fw-medium);
+}

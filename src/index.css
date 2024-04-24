@@ -1,0 +1,45 @@
+/* Importing the League Spartan font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+/* Resetting margin and box-sizing for all elements */
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Setting height of html, body, and the div with id "root" to 100% 
+   Ensures that the height remains 100% of the parent element, 
+   without causing scrollbars to appear in some browsers
+*/
+
+html,body,div#root{
+  height: 100%;
+}
+
+/* Setting font family to League Spartan and optimizing text rendering */
+
+body{
+  font-family: "League Spartan", sans-serif;
+  text-rendering: optimizeSpeed;
+}
+
+/* Hide scrollbar in all browsers */
+body {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+
+/* Hide scrollbar in WebKit browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Making images responsive */
+img{
+  display: block;
+  max-width: 100%;
+}
+
+

@@ -1,0 +1,22 @@
+/* Container styles */
+
+.box-container {
+    margin: 2rem;
+    padding: 1em;
+    width: 100%;
+    max-width: 35rem;
+
+    background-color: var(--bg-secondary);
+
+    border: var(--ele-solid-border);
+    border-radius: var(--border-radius);
+
+    overflow-x: scroll;
+}
+
+
+
+
+
+
+

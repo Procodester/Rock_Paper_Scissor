@@ -1,0 +1,165 @@
+/* Styling for the main game section */
+.main-game-section {
+    display: grid;
+    gap: 2rem;
+}
+
+/* Styling for the choice display */
+.choice-display {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* Styling for user and bot information */
+.user-info,
+.bot-info {
+    display: grid;
+    text-align: center;
+    gap: 1rem;
+}
+
+
+/* Styling for the selected choice */
+.sel-choice {
+    border: var(--ele-solid-border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--border-shadow);
+    padding: 1em 1.5em;
+}
+
+
+/* Styling for user choice buttons */
+.usr_choice {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Styling for remaining chances display */
+.remaining-chance {
+    padding: 0.5rem;
+    margin-top: 2rem;
+    justify-self: right;
+    border: var(--ele-solid-border);
+    box-shadow: var(--border-shadow);
+}
+
+
+/* Styling for image sizes */
+.img-lg {
+    width: var(--fs-large);
+    aspect-ratio: 1;
+}
+
+.img-rg {
+    width: var(--fs-regular);
+    aspect-ratio: 1;
+}
+
+
+
+/* Animations */
+.main-game-transition {
+    animation: fade-in-right 0.25s cubic-bezier(0.400, 0.550, 0.565, 1.000) both;
+}
+
+.wobble-text {
+    animation: wobble-hor-bottom 0.4s both;
+}
+
+
+.win {
+    animation: borderWins 0.75s ease-out both;
+}
+
+
+.loss {
+    animation: borderLoose 0.75s forwards;
+}
+
+
+
+
+
+/* Keyframes */
+
+@keyframes borderWins {
+    0% {
+        border-color: green;
+    }
+
+   
+    100% {
+        border-color: green;
+    }
+
+
+}
+
+
+@keyframes borderLoose {
+    0% {
+        border-color: red;
+
+    }
+
+
+    100% {
+        border-color: red;
+
+    }
+}
+
+
+
+@keyframes wobble-hor-bottom {
+
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+
+
+@keyframes fade-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

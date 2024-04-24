@@ -1,0 +1,29 @@
+/* End Section with Grid layout for a gap */
+
+.end-game-section {
+    display: grid;
+    gap: 1rem;
+}
+
+/* Animation for end game transition */
+.end-game-transition {
+    animation: scale-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+/* Keyframes for scale-center animation */
+@keyframes scale-center {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

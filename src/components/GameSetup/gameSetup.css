@@ -1,0 +1,20 @@
+/* Button styles */
+
+.btn {
+    background-color: transparent;
+    padding: .5rem .75rem;
+
+    border: var(--btn-border);
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--btn-shadow);
+   
+    cursor: pointer; 
+}
+
+
+/* Button hover styles */
+
+.btn:hover{
+    box-shadow: var(--btn-shadow-hv);
+}
